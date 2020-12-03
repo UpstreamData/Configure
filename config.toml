@@ -1,0 +1,33 @@
+[format]
+version = '1.1+'
+model = 'Antminer S9'
+generator = 'BOSminer+ 0.2.0-ea64aec8e'
+timestamp = 1594916448
+
+[temp_control]
+target_temp = 89.0
+hot_temp = 110.0
+dangerous_temp = 120.0
+
+[[group]]
+name = 'group'
+quota = 1
+
+[[group.pool]]
+url = 'stratum+tcp://192.168.1.200:3333'
+user = 'LPRBTCPA.Unit49'
+password = '123'
+
+[[group.pool]]
+url = 'stratum+tcp://us-east.stratum.slushpool.com:3333'
+user = 'LPRBTCPA.Unit49'
+password = '123'
+
+[[group.pool]]
+url = 'stratum+tcp://stratum.slushpool.com:3333'
+user = 'LPRBTCPA.Unit49'
+password = '123'
+
+[autotuning]
+enabled = true
+psu_power_limit = 800
